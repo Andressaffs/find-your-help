@@ -1,0 +1,371 @@
+
+/* Background home page */
+.bg{
+  background-color: aliceblue;
+}
+
+/* CARD postar IDEIA */
+.botaodacor {
+  background-color: #f4af1b;
+  position: relative;
+  top: 50%;
+  left: 30%;
+}
+.botaocor {
+  background-color: #f4af1b;
+}
+
+.fundo {
+  background-color: #f2bc94;
+}
+
+#texto2{
+  position: relative;
+  right:30px;
+}
+.botaodahora {
+  background-color: transparent;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: darkgray;
+  border-color: 1px darkgray;
+  border-color: transparent;
+  font-size: 14pt; height: 45px; width: 100%; color: gray; border-radius: 23px; font-weight: normal; text-align: start;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 21px;
+}
+
+.formlado {
+  display: inline-flex;
+  width: 400px;
+}
+
+.modal-header {
+  background: #3f89e9;
+  background-image: linear-gradient(to right, #015ad1, #1748bc);
+  color: #fff;
+  height: 80px;
+}
+
+.close {
+  margin: 5px;
+}
+
+/* FIM do CARD postar IDEIA */
+
+/* CARD das Postagens */
+body {
+  background-color: #eeeeee;
+}
+
+.h7Post {
+  font-size: 0.8rem;
+}
+
+.gedf-wrapper {
+  margin-top: 0.97rem;
+}
+
+@media (min-width: 992px) {
+  .gedf-main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .gedf-card {
+    margin-bottom: 2.77rem;
+  }
+}
+
+/* FIM do CARD das Postagens */
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+  content: none;
+  display: none;
+}
+
+/* --CARD USUARIO-- */
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.img-size{
+  height: 130px;
+  width: 130px;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  font-weight: bold;
+}
+
+.our-team .social li {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.our-team .social li a {
+  display: block;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+ @media screen and (max-width: 600px) {
+  .our-team {
+    display: none;
+  }
+}
+
+.button-style {
+	border-radius: 10px;
+	border: 1px solid #f3ecec;
+	background-color: #1369ce;
+	color: #FFFFFF;
+	font-size: 11pt;
+	padding: 8px 60px;
+
+}
+/* Fim do CARD Usuario */
+
+
+/* menu */
+.margin{
+  margin-top: 2cm;
+}
+
+.cor{
+  color: #f4af1b;
+  font-size: 20px;
+}
+.fs-14 {
+  font-size: 14pt;
+}
+
+.imagem{
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+}
+
+/*Search */
+
+
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #70c2cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  line-height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 343px;
+  border: none;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+
+  height: 38px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.backbordinha{
+background-color: #015ad1;
+border-radius: 10px;
+}
+
+.descer{
+  position: relative;
+  top: 10px;
+}
+
+/* modal */
+.juntinho{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ideia{
+  background-color: azure;
+  border-style: dotted;
+
+}
+
+.prala{
+  float: right;
+}
+/* //modal */
+.card-img-top
+{opacity: 65%; height: 250px; background: rgba(50, 50, 50, 0.8);}
+/* comentario */
+.mexer{
+  position: absolute;
+  left: 390px;
+  height: 60px;
+}
+
+.akinao{
+  pointer-events: none;
+}
+
+.maisprala{
+  position:relative;
+  left: 200px;
+}
+
+.grande{
+  width: 480px;
+}
+
+.pequeno{
+  width: 400px;
+}
+
+
+
+
+@media(max-width: 574px) {
+
+  .grande{
+    width: 220px;
+  }
+
+  .mexer{
+    position: absolute;
+    left: 195px;
+    height: 5px;
+    width:50px;
+    margin-bottom: 15px;
+  }
+
+  .botaodahora{
+    font-size: 10pt;
+  }
+
+  .pequeno{
+    width: 200px;
+  }
+
+  .maisprala{
+    position:relative;
+    left: 20px;
+  }
+
+ .umpoucola{
+   position: relative;
+  right: 30px;
+ }
+ .umpoucolatbm{
+  position: relative;
+  right: 20px;
+ }
+
+ .juntinho{
+   width: 70px;
+   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+ }
+
+ /* //comentario */
+ /* carrousel */
+ .card-img-top
+ {opacity: 65%; height: 250px; width: 170px !important; background: rgba(50, 50, 50, 0.8);}
+ /* //carrousel */
+
+}

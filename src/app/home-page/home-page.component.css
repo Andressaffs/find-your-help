@@ -1,0 +1,400 @@
+.fs-14 {
+  font-size: 14pt;
+}
+.gris{
+  background: linear-gradient(to bottom, #000, transparent);
+}
+
+/*------------ Banner-------------- */
+
+#banner{
+  margin-bottom: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.sombra{
+  background: linear-gradient(360deg, rgba(15, 82, 138, 0.2), rgba(0, 0, 0, 0.2));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.ban{
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+}
+.ban:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, aliceblue, transparent);
+  z-index: 3;
+}
+
+.ban .imagens{
+  position:absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  object-fit: cover;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+.ban .luz{
+  position:absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  object-fit: cover;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.ban .efehov{
+  position: absolute;
+  width: 270px;
+  height: 360px;
+  top: 42%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.image{
+  opacity: 0;
+  display: block;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.luz{
+  opacity: 0;
+  z-index: 2;
+  transition: 1.5s;
+}
+.magic:hover .luz{
+  opacity: 1;
+  transition: 1s;
+}
+
+.lampada{
+  z-index: 2;
+}
+
+#text{
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  z-index: 1;
+}
+#text2{
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.3em;
+  z-index: 1;
+}
+#text3{
+  justify-content: left;
+  align-items: flex-start;
+  position: relative;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.3em;
+  z-index: 1;
+
+  
+}
+/*------------/Banner-------------- */
+
+
+  /*---------- Sobre Find your Help------------ */
+  p, h1 {
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+  .text-color{
+    color:#F4AF1B;
+  }
+
+  div .quadrado{
+    width: 60px;
+    height: 3px;
+    background-color: #F4AF1B;
+  }
+
+  .bg{
+    background-color: aliceblue;
+  }
+
+  /*---------- /Sobre Find your Help------------ */
+
+ /*-----------------Cards---------------*/
+ .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.profile{
+  position: relative;
+  width: 200px;
+  height: 250px;
+  /* background: url("../../assets/imagem/osvaldo_T16.jpeg"); */
+  background-size: cover;
+  cursor: pointer;
+  border: 12px;
+  border-top-right-radius: 35px !important;
+  border-radius: 6px;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 1s;
+  border-top-right-radius: 35px !important;
+  border-radius: 6px;
+}
+.profile:hover .overlay{
+  opacity: 1;
+}
+
+.sociais-icons{
+  display: flex;
+  list-style: none;
+  bottom: 10px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  right: 4px;
+}
+
+.sociais-icons li{
+  width: 25px;
+  height: 25px;
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-right:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 1s;
+
+}
+.sociais-icons li:hover{
+  background: #fff;
+  color: #000;
+}
+
+.overlay .about{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  top: 40%;
+  color: #fff;
+  flex: column;
+}
+
+.sobreNos{
+  position: relative;
+  bottom:10px;
+}
+ /* -----------/Cards---------------- */
+ .img-size{
+  width: 300px;
+
+}
+
+
+/* -----------Depoimentos---------------- */
+#myCarousel .carousel-item .mask {
+  position: relative;
+  top: 0;
+  left: 80px;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed
+}
+#myCarousel .bannerProf {
+  font-size: 30px;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 110px;
+  bottom: 30px;
+  color: rgb(240, 209, 37);
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  font-weight: 600
+}
+
+#myCarousel .textCom {
+  font-size: 20px;
+  position: absolute;
+  left: 100px;
+  
+  color:black;
+}
+
+#myCarousel .carousel-item a {
+  background: #FF0000;
+  font-size: 14px;
+  color: #FFF;
+  padding: 13px 32px;
+  display: inline-block
+}
+
+#myCarousel .carousel-item a:hover {
+  background: #FF0000;
+  text-decoration: none
+}
+
+#myCarousel .container {
+  max-width: 1430px
+}
+#myCarousel .carousel-item {
+  height: 100%;
+  min-height: 550px
+}
+
+#myCarousel {
+  position: relative;
+  height: 350px;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(1,89,153,1) 0%, rgba(0,101,169,1) 35%, rgba(0,107,177,1) 92%);
+  background-size: cover
+}
+
+.lapracima{
+  position: relative;
+  bottom: 120px;
+  left: 90px;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel .carousel-control-next-icon {
+ background-image: url(https://imgur.com/4IY0fz3.png);
+  height: 70px;
+  width: 29px;
+  
+  
+}
+
+.carousel .carousel-control-prev-icon {
+  background-image: url(https://imgur.com/LmlnZ6I.png);
+  height: 70px;
+  width: 29px;
+  
+
+}
+
+#myCarousel .carousel-item {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  top:60px;
+  left: 30px;
+}
+
+.imgTam{
+  width: 230px;
+  height: 230px;
+  
+}
+ /* -----------/Depoimentos---------------- */
+
+@media(max-width: 574px) {
+
+ /* -----------Depoimentosversaomobile---------------- */  
+.imgTam{
+  width: 100px;
+  height: 100px;
+ position: relative;
+ bottom: 50px;
+
+  
+}
+
+.lapracima{
+  position: relative;
+  bottom: 120px;
+  left: 80px;
+  width: 50px;
+  height: 50px;
+}
+#myCarousel .textCom {
+  font-size: 14px;
+  position: absolute;
+  left: 120px;
+  color:black;
+  width:140px;
+ top:20px;
+  
+
+}
+
+.pequeno{
+  font-size: 9px;
+  
+}
+
+
+.celesquerda{
+
+  position: absolute;
+  right:160px;
+  top:120px;
+}
+#myCarousel .bannerProf {
+  font-size: 18px;
+}
+
+.carousel .carousel-control-next-icon {
+  background-image: url(https://imgur.com/4IY0fz3.png);
+   height: 70px;
+   width: 29px;
+  position: relative; 
+  right: 0px;   
+ }
+}
+ /* -----------Depoimentosversaomobile---------------- */
